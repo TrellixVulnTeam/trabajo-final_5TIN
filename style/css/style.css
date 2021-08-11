@@ -1,0 +1,771 @@
+@charset "UTF-8";
+* {
+  text-decoration: none;
+  padding: 0%;
+  margin: 0%; }
+
+body {
+  /*Copiado directamente de la página de Mercado Libre*/
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  /*Menos el font, creo que usan una fuente paga */
+  font-size: 14px; }
+
+header {
+  background-color: #fff159; }
+
+main {
+  /*Copiado directamente de la página de Mercado Libre*/
+  background-color: #ebebeb; }
+
+footer {
+  height: 300px;
+  background: #ebebeb;
+  background: linear-gradient(180deg, #ebebeb 50%, white 90%); }
+  footer .footer_p--padding {
+    padding-top: 200px; }
+
+/* Variables... */
+/* las variables me crashean el npm */
+/* copiado de Mercado Libre */
+/* Variables.*/
+/*Media Queries*/
+@media (max-width: 576px) {
+  /*INDEX...*/
+  /*Clases...*
+
+         /*Header...*/
+  .header {
+    display: block;
+    height: 175px;
+    align-items: center;
+    justify-content: space-evenly; }
+  .header_logo {
+    height: 80px;
+    width: 100px;
+    margin-left: 165px; }
+  /*Header.*/
+  /*DESACTIVAR CAROUSEL SOLO PARA MQ-576px)*/
+  .carousel-mq_576px {
+    opacity: 0%;
+    background-color: #ebebeb; }
+  /*DESACTIVAR CAROUSEL...*/
+  /*main...*/
+  .main--grid {
+    display: grid;
+    height: 4500px;
+    justify-items: center;
+    text-align: center;
+    grid-column-gap: 25px;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "title" "articles" "aside"; }
+  .title {
+    grid-area: title;
+    margin: 50px; }
+  .main_aside--grid-item {
+    grid-area: aside;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 35px;
+    margin-left: 10px;
+    margin-bottom: 25px; }
+    .main_aside--grid-item h2 {
+      margin-left: 5px; }
+  .main_div--grid-item {
+    grid-area: articles;
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    text-align: center;
+    gap: 30px;
+    margin-right: 10px; }
+  .main_aside_div--flex-item {
+    margin-bottom: 25px; }
+  .main_div_article--flex-item {
+    margin-bottom: 25px; }
+  /* main.*/
+  /*INDEX.*/
+  /*LOGIN...*/
+  .login_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ebebeb;
+    background: linear-gradient(0deg, #ebebeb 23%, #fff159 60%); }
+  .div--login {
+    background-color: white;
+    width: 90%;
+    height: 50%;
+    margin-top: 35px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column; }
+    .div--login .div_a--logo {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 25px; }
+  .div_form--padding {
+    padding: 30px; }
+  /*LOGIN.*/
+  /*PRODUCTOS...*/
+  .producto_div--flex {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 100px; }
+  .div_img {
+    height: 600px;
+    width: 100%;
+    margin-top: 30px; }
+    .div_img img {
+      height: 600px;
+      width: 100%; }
+  .div_card {
+    margin-top: 30px; }
+  /*PRODUCTOS.*/
+  /*Compra Completada...*/
+  .div_compra-completada--flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .h1-compra_completada {
+    font-weight: bolder;
+    font-size: 50px;
+    padding: 35px; }
+  .span-compra_completada {
+    background-color: #504e4e;
+    color: white;
+    font-weight: lighter;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 300px; }
+  .div_compra-completada_div-imagen {
+    margin-top: 25px;
+    height: 400px;
+    width: 700px; }
+  /*Compra Completada.*/
+  /*Clases.*/ }
+
+@media (min-width: 576px) {
+  /*INDEX...*/
+  /*Clases...*
+
+         /*Header...*/
+  .header {
+    padding-left: 100px;
+    display: block;
+    height: 175px;
+    align-items: center;
+    justify-content: space-evenly; }
+  .header_logo {
+    height: 80px;
+    width: 100px;
+    margin-left: 165px; }
+  /*Header.*/
+  /*DESACTIVAR CAROUSEL SOLO PARA MQ-576px)*/
+  .carousel-mq_576px {
+    opacity: 0%;
+    background-color: #ebebeb; }
+  /*DESACTIVAR CAROUSEL...*/
+  /*main...*/
+  .main--grid {
+    display: grid;
+    height: 4500px;
+    justify-items: center;
+    text-align: center;
+    grid-column-gap: 25px;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "title" "articles" "aside"; }
+  .title {
+    grid-area: title;
+    margin: 50px; }
+  .main_aside--grid-item {
+    grid-area: aside;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 35px;
+    margin-left: 10px;
+    margin-bottom: 25px; }
+    .main_aside--grid-item h2 {
+      margin-left: 5px; }
+  .main_div--grid-item {
+    grid-area: articles;
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    text-align: center;
+    gap: 30px;
+    margin-right: 10px; }
+  .main_aside_div--flex-item {
+    margin-bottom: 25px; }
+  .main_div_article--flex-item {
+    margin-bottom: 25px; }
+  /* main.*/
+  /*INDEX.*/
+  /*LOGIN...*/
+  .login_main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #ebebeb;
+    background: linear-gradient(0deg, #ebebeb 23%, #fff159 60%); }
+  .div--login {
+    background-color: white;
+    width: 90%;
+    height: 50%;
+    margin-top: 35px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column; }
+    .div--login .div_a--logo {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 25px; }
+  .div_form--padding {
+    padding: 30px; }
+  /*LOGIN.*/
+  /*PRODUCTOS...*/
+  .producto_div--flex {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 100px; }
+  .div_img {
+    height: 600px;
+    width: 100%;
+    margin-top: 30px; }
+    .div_img img {
+      height: 600px;
+      width: 100%; }
+  .div_card {
+    margin-top: 30px; }
+  /*PRODUCTOS.*/
+  /*Compra Completada...*/
+  .div_compra-completada--flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .h1-compra_completada {
+    font-weight: bolder;
+    font-size: 50px;
+    padding: 35px; }
+  .span-compra_completada {
+    background-color: #504e4e;
+    color: white;
+    font-weight: lighter;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 50px; }
+  .div_compra-completada_div-imagen {
+    margin-top: 25px;
+    height: 400px;
+    width: 700px; }
+  /*Compra Completada.*/
+  /*Clases.*/ }
+
+@media (min-width: 750px) {
+  /*INDEX...*/
+  /*Clases...*
+
+         /*Header...*/
+  .header {
+    padding-left: 150px;
+    display: block;
+    height: 150px;
+    align-items: center;
+    justify-content: space-evenly; }
+  .header_logo {
+    height: 80px;
+    width: 100px;
+    margin-left: 165px; }
+  /*Header.*/
+  /*main...*/
+  .main--grid {
+    display: grid;
+    height: 3200px;
+    justify-items: center;
+    text-align: center;
+    grid-column-gap: 25px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "title title" "aside articles" "aside articles"; }
+  .title {
+    grid-area: title; }
+  .main_aside--grid-item {
+    grid-area: aside;
+    padding-top: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    gap: 90px; }
+    .main_aside--grid-item h2 {
+      margin-left: 5px; }
+  .main_div--grid-item {
+    grid-area: articles;
+    display: block;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    text-align: center; }
+  .main_aside_div--flex-item {
+    margin-bottom: 25px; }
+  .main_div_article--flex-item {
+    margin-bottom: 25px; }
+  /* main.*/
+  /*INDEX.*/
+  /*LOGIN...*/
+  .login_main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #ebebeb;
+    background: linear-gradient(0deg, #ebebeb 23%, #fff159 60%); }
+  .div--login {
+    background-color: white;
+    width: 90%;
+    height: 50%;
+    margin-top: 35px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column; }
+    .div--login .div_a--logo {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 25px; }
+  .div_form--padding {
+    padding: 30px; }
+  /*LOGIN.*/
+  /*PRODUCTOS...*/
+  .producto_div--flex {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 100px; }
+  .div_img {
+    height: 600px;
+    width: 100%;
+    margin-top: 30px; }
+    .div_img img {
+      height: 600px;
+      width: 100%; }
+  .div_card {
+    margin-top: 30px; }
+  /*PRODUCTOS.*/
+  /*Compra Completada...*/
+  .div_compra-completada--flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .h1-compra_completada {
+    font-weight: bolder;
+    font-size: 50px;
+    padding: 35px; }
+  .span-compra_completada {
+    background-color: #504e4e;
+    color: white;
+    font-weight: lighter;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 100px; }
+  .div_compra-completada_div-imagen {
+    margin-top: 25px;
+    height: 400px;
+    width: 700px; }
+  /*Compra Completada.*/
+  /*Clases.*/ }
+
+@media (min-width: 920px) {
+  /*INDEX...*/
+  /*Clases...*
+
+         /*Header...*/
+  .header {
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 200px; }
+  .header_logo {
+    height: 80px;
+    width: 100px;
+    margin-right: 65px; }
+  /*Header.*/
+  /*main...*/
+  .main--grid {
+    display: grid;
+    height: 2000px;
+    grid-column-gap: 25px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 10% 45% 45%;
+    grid-template-areas: "title title title" "aside articles articles" "aside articles articles"; }
+  .title {
+    grid-area: title; }
+  .main_aside--grid-item {
+    grid-area: aside;
+    padding-top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 35px;
+    margin-left: 10px;
+    margin-bottom: 25px; }
+    .main_aside--grid-item h2 {
+      margin-left: 5px; }
+  .main_div--grid-item {
+    grid-area: articles;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    text-align: center;
+    gap: 15px;
+    margin-right: 10px; }
+  /* main.*/
+  /*INDEX.*/
+  /*LOGIN...*/
+  .login_main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #ebebeb;
+    background: linear-gradient(0deg, #ebebeb 23%, #fff159 60%); }
+  .div--login {
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column; }
+    .div--login .div_a--logo {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 25px; }
+  .div_form--padding {
+    padding: 30px; }
+  /*LOGIN.*/
+  /*PRODUCTOS...*/
+  .producto_div--flex {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; }
+  .div_img {
+    height: 738px;
+    width: 70%;
+    margin-top: 30px;
+    margin: 20px; }
+    .div_img img {
+      height: 738px; }
+  .div_card {
+    margin: 20px; }
+  /*PRODUCTOS.*/
+  /*Compra Completada...*/
+  .div_compra-completada--flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .h1-compra_completada {
+    font-weight: bolder;
+    font-size: 50px;
+    padding: 35px; }
+  .span-compra_completada {
+    background-color: #504e4e;
+    color: white;
+    font-weight: lighter;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 200px; }
+  .div_compra-completada_div-imagen {
+    margin-top: 25px;
+    height: 400px;
+    width: 700px; }
+  /*Compra Completada.*/
+  /*Clases.*/ }
+
+@media (min-width: 1200px) {
+  /*Clases...*/
+  /*INDEX...*/
+  /*Header...*/
+  .header {
+    display: flex;
+    height: 65px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 200px; }
+  .header_logo {
+    height: 80px;
+    width: 100px; }
+  /*Header.*/
+  /*main...*/
+  .main--grid {
+    display: grid;
+    grid-column-gap: 25px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 10% 30% 30% 30%;
+    row-gap: 50px;
+    grid-template-areas: "title title title" "aside articles articles" "aside articles articles"; }
+  .title {
+    grid-area: title; }
+  .main_aside--grid-item {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 25px; }
+    .main_aside--grid-item h2 {
+      margin-left: 5px; }
+  .main_div--grid-item {
+    grid-area: articles;
+    padding-top: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    text-align: center;
+    gap: 30px;
+    margin-right: 10px; }
+  /* main.*/
+  /*INDEX.*/
+  /*LOGIN...*/
+  .login_main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #ebebeb;
+    background: linear-gradient(0deg, #ebebeb 23%, #fff159 60%); }
+  .div--login {
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column; }
+    .div--login .div_a--logo {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 25px; }
+  .div_form--padding {
+    padding: 30px; }
+  /*LOGIN.*/
+  /*PRODUCTOS...*/
+  .producto_div--flex {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; }
+  .div_img {
+    height: 738px;
+    width: 70%;
+    margin-top: 30px;
+    margin: 20px; }
+    .div_img img {
+      height: 738px; }
+  .div_card {
+    margin: 20px; }
+  /*PRODUCTOS.*/
+  /*Compra Completada...*/
+  .div_compra-completada--flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .h1-compra_completada {
+    font-weight: bolder;
+    font-size: 50px;
+    padding: 35px; }
+  .span-compra_completada {
+    background-color: #504e4e;
+    color: white;
+    font-weight: lighter;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 300px; }
+  .div_compra-completada_div-imagen {
+    margin-top: 25px;
+    height: 400px;
+    width: 700px; }
+  /*Compra Completada.*/
+  /*Clases.*/ }
+
+@media (min-width: 1400px) {
+  /*Supongo que en 1400 pixeles se necesita un font-size mayor, pero no lo puedo probar ahora*/
+  body {
+    font-size: larger;
+    font-weight: bolder; }
+  /*Clases...*/
+  /*INDEX...*/
+  /*Header...*/
+  .header {
+    display: flex;
+    height: 65px;
+    align-items: center;
+    justify-content: space-evenly; }
+  .header_logo {
+    height: 80px;
+    width: 100px;
+    margin-right: 65px; }
+  /*Header.*/
+  /*main...*/
+  .main--grid {
+    display: grid;
+    grid-column-gap: 25px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 10% 30% 30% 30%;
+    row-gap: 50px;
+    grid-template-areas: "title title title" "aside articles articles" "aside articles articles"; }
+  .title {
+    grid-area: title; }
+  .main_aside--grid-item {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 25px; }
+    .main_aside--grid-item h2 {
+      margin-left: 5px; }
+  .main_div--grid-item {
+    grid-area: articles;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    text-align: center;
+    gap: 30px;
+    margin-right: 10px; }
+  /* main.*/
+  /*INDEX.*/
+  /*LOGIN...*/
+  .login_main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #ebebeb;
+    background: linear-gradient(0deg, #ebebeb 23%, #fff159 60%); }
+  .div--login {
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column; }
+    .div--login .div_a--logo {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 25px; }
+  .div_form--padding {
+    padding: 30px; }
+  /*LOGIN.*/
+  /*PRODUCTOS...*/
+  .producto_div--flex {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; }
+  .div_img {
+    height: 738px;
+    width: 70%;
+    margin-top: 30px;
+    margin: 20px; }
+    .div_img img {
+      height: 738px; }
+  .div_card {
+    margin: 20px; }
+  /*PRODUCTOS.*/
+  /*Compra Completada...*/
+  .div_compra-completada--flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .h1-compra_completada {
+    font-weight: bolder;
+    font-size: 50px;
+    padding: 35px; }
+  .span-compra_completada {
+    background-color: #504e4e;
+    color: white;
+    font-weight: lighter;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 300px; }
+  .div_compra-completada_div-imagen {
+    margin-top: 25px;
+    height: 400px;
+    width: 700px; }
+  /*Compra Completada.*/
+  /*Clases.*/ }
+
+/*Media queries.*/
+/*Animaciones...*/
+/*Copiado de otro trabajo mío, ya que no me andaba el :hover, era porque no puse la clase atras suyo*/
+/*hovers...*/
+.hover-borders {
+  animation-duration: 3s; }
+
+.hover-borders :hover {
+  border-color: #fff159;
+  border-width: 2px; }
+
+/*hovers.*/
+/*keyframes...*/
+.keyframes-aparecer-3s {
+  animation-duration: 3s;
+  animation-name: aparecer-3s; }
+
+@keyframes aparecer-3s {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.keyframes-aparecer-2s {
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.keyframes-aparecer-1s {
+  animation-duration: 1s;
+  animation-name: aparecer-1s; }
+
+@keyframes aparecer-1s {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*keyframes.*/
+/*animaciones.*/

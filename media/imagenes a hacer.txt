@@ -1,0 +1,4 @@
+1, LOGO
+2, Producto carrousel
+3, Producto mas vendidos x3
+4, Producto en article x6
